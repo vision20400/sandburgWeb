@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>샌드버그</title>
+
+    <style>
+        /* reset */
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        a{text-decoration: none;}
+
+        /* common */
+        .wrapper{width: 1280px; margin: 0 auto;}
+        .clearfix{content: ''; display: block; clear: both;}
+
+        /* header */
+        header{height: 60px; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); position: fixed; width: 100%; z-index: 9999; top: 0;}
+
+        .logo{position:absolute;background-size : contain; background-image: url('Sandburg_logo.png'); height: 60px; width: 140px; filter:  brightness(0) invert(1); }
+        .menu{float: right;}
+        .menu li{float: left;}
+        .menu a{line-height: 60px; color: white; padding: 0 15px; display: block;}
+
+        /* background */
+        .main1_wrapper{
+            height: 100vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(background_main1.jpg);
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+
+        .main2_wrapper{
+            height: 100vh;
+            background-image: url('background_main2.jpg');
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+
+        .main3_wrapper{
+            height: 100vh;
+            background-color: black;
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+
+        /* h1 */
+        h1{
+            padding: 196px; padding: 260px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 84px;
+            line-height: 100px;
+            color: #FFFFFF;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo"></div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">샌드버그</a></li>
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">팀원</a></li>
+                    <li><a href="#">문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main1_wrapper">
+        <h1>
+            세상은 저절로 </br>나아지지 않습니다.
+        </h1>
+    </div>
+    <div class="main2_wrapper">
+        팀 미션
+    </div>
+    <div class="main3_wrapper">
+        활동 로그
+    </div>
+</body>
+</html>
