@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>샌드버그_팀원</title>
+
+    <style>
+      /* reset */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      /* common */
+      .wrapper {
+        width: 1280px;
+        margin: auto;
+      }
+      .clearfix {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      /* header */
+      header {
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        top: 0;
+      }
+
+      .logo {
+        position: absolute;
+        background-size: contain;
+        background-image: url("Sandburg_logo.png");
+        height: 60px;
+        width: 140px;
+        filter: brightness(0) invert(1);
+      }
+      .menu {
+        float: right;
+      }
+      .menu li {
+        float: left;
+      }
+      .menu a {
+        line-height: 60px;
+        color: white;
+        padding: 0 15px;
+        display: block;
+      }
+
+      /* background */
+      .main1_wrapper {
+        height: 100vh;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(background_team1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .main2_wrapper {
+        height: 100vh;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(background_team2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .main3_wrapper {
+        height: 100vh;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(background_team3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .mainBox {
+        width: max-content;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .nick {
+        font-weight: Bold;
+        font-family: Roboto;
+        font-size: 24px;
+        color: #ffffff;
+        margin: 18px;
+      }
+
+      .image1 {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(image1.jpg);
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo"></div>
+        <nav>
+          <ul class="menu">
+            <li><a href="./index.html">샌드버그</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="./team.html">팀원</a></li>
+            <li><a href="#">문의</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="main1_wrapper">
+      <div class="mainBox">
+        <div style="text-align: right">
+          <p class="nick" style="color: #d2d2d2; margin-top: 28px">
+            라이프 스타일 디렉터
+          </p>
+          <p class="nick">대표 이사 | 기획 및 마케팅 총괄</p>
+          <p class="nick" style="font-size: 36px">배호진</p>
+        </div>
+        <img src="image1.jpg" width="160px" style="margin-right: 250px" />
+        <div>
+          <p class="nick" style="margin-top: 40px; margin-right: 100px">
+            더 나은 세상이라는 뜬 구름을 잡으려는 그 꿈을 꾸고,
+          </p>
+          <p class="nick" style="margin-left: 100px; font-size: 36px">
+            그 꿈을 현실로 만드려는 사람입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="main2_wrapper">
+      <div class="mainBox" style="top: 150%">
+        <div>
+          <p class="nick" style="margin-top: 40px; margin-right: 300px">
+            창의적이고 혁신적인 기술과 함께
+          </p>
+          <p class="nick" style="margin-left: 100px; font-size: 36px">
+            더 나은 세상을 만들기 위해 나아갑니다.
+          </p>
+        </div>
+        <img src="image2.jpg" width="160px" style="margin-left: 200px" />
+        <div style="text-align: left">
+          <p class="nick" style="color: #d2d2d2; margin-top: 28px">
+            라이프 스타일 프로그래머
+          </p>
+          <p class="nick">CTO | SW 개발 및 기획 총괄</p>
+          <p class="nick" style="font-size: 36px">이세진</p>
+        </div>
+      </div>
+    </div>
+    <div class="main3_wrapper">
+      <div class="mainBox" style="top: 250%">
+        <div style="text-align: right">
+          <p class="nick" style="color: #d2d2d2; margin-top: 28px">
+            라이프 스타일 SCV
+          </p>
+          <p class="nick">CSO | 개발 및 서비스 관리</p>
+          <p class="nick" style="font-size: 36px">최길튼</p>
+        </div>
+        <img src="image3.jpg" width="160px" style="margin-right: 250px" />
+        <div>
+          <p class="nick" style="margin-top: 40px; margin-right: 100px">
+            더 나은 세상이라는 뜬 구름을 잡으려는 그 꿈을 꾸고,
+          </p>
+          <p class="nick" style="margin-left: 100px; font-size: 36px">
+            그 꿈을 현실로 만드려는 사람입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
