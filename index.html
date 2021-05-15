@@ -41,6 +41,18 @@
         top: 0;
       }
 
+      @media (max-width: 600px) {
+        header {
+          height: 50px;
+          background-color: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(20px);
+          position: fixed;
+          width: 100%;
+          z-index: 9999;
+          top: 0;
+        }
+      }
+
       .logo {
         position: absolute;
         background-size: contain;
@@ -48,6 +60,16 @@
         height: 60px;
         width: 140px;
         filter: brightness(0) invert(1);
+      }
+
+      @media (max-width: 600px) {
+        .logo {
+          position: absolute;
+          background-size: contain;
+          background-image: url("Sandburg_logo.png");
+          height: 50px;
+          filter: brightness(0) invert(1);
+        }
       }
       .menu {
         float: right;
@@ -97,13 +119,25 @@
       /* h1 */
       h1 {
         padding: 196px;
-        padding: 260px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 84px;
         line-height: 100px;
         color: #ffffff;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          padding: 50px;
+          padding-top: 200px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 50px;
+          color: #ffffff;
+        }
       }
 
       h2 {
@@ -123,6 +157,25 @@
         color: #ffffff;
       }
 
+      @media (max-width: 600px) {
+        h2 {
+          text-align: center;
+          font-family: Roboto;
+          font-size: 30px;
+          color: #b0b8c1;
+        }
+
+        h3 {
+          width: max-content;
+          text-align: center;
+          font-weight: bold;
+          font-family: Roboto;
+          font-size: 18px;
+          line-height: 25px;
+          color: #ffffff;
+        }
+      }
+
       .box {
         position: absolute;
         top: 150%;
@@ -138,6 +191,18 @@
         font-size: 42px;
         line-height: auto;
         color: #ffffff;
+      }
+
+      @media (max-width: 600px) {
+        .text {
+          padding-top: 120px;
+          text-align: center;
+          font-weight: bold;
+          font-family: Roboto;
+          font-size: 22px;
+          line-height: auto;
+          color: #ffffff;
+        }
       }
     </style>
   </head>
