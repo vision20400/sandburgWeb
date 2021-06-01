@@ -4,210 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b94fc6da9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
     <title>샌드버그</title>
-
-    <style>
-      /* reset */
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      li {
-        list-style: none;
-      }
-      a {
-        text-decoration: none;
-      }
-
-      /* common */
-      .wrapper {
-        width: 1280px;
-        margin: auto;
-      }
-      .clearfix {
-        content: "";
-        display: block;
-        clear: both;
-      }
-
-      /* header */
-      header {
-        height: 60px;
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(20px);
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
-        top: 0;
-      }
-
-      @media (max-width: 600px) {
-        header {
-          height: 50px;
-          background-color: rgba(255, 255, 255, 0.1);
-          backdrop-filter: blur(20px);
-          position: fixed;
-          width: 100%;
-          z-index: 9999;
-          top: 0;
-        }
-      }
-
-      .logo {
-        position: absolute;
-        background-size: contain;
-        background-image: url("Sandburg_logo.png");
-        height: 60px;
-        width: 140px;
-        filter: brightness(0) invert(1);
-      }
-
-      @media (max-width: 600px) {
-        .logo {
-          position: absolute;
-          background-size: contain;
-          background-image: url("Sandburg_logo.png");
-          height: 50px;
-          filter: brightness(0) invert(1);
-        }
-      }
-      .menu {
-        float: right;
-      }
-      .menu li {
-        float: left;
-      }
-      .menu a {
-        line-height: 60px;
-        color: white;
-        padding: 0 15px;
-        display: block;
-      }
-
-      /* background */
-      .main1_wrapper {
-        height: 100vh;
-        background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
-          ),
-          url(background_main1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .main2_wrapper {
-        height: 100vh;
-        background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
-          ),
-          url(background_main2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .main3_wrapper {
-        height: 100vh;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      /* h1 */
-      h1 {
-        padding: 196px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 84px;
-        line-height: 100px;
-        color: #ffffff;
-      }
-
-      @media (max-width: 600px) {
-        h1 {
-          padding: 45px;
-          padding-top: 180px;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 28px;
-          line-height: 50px;
-          color: #ffffff;
-        }
-      }
-
-      h2 {
-        text-align: center;
-        font-family: Roboto;
-        font-size: 30px;
-        line-height: 100px;
-        color: #b0b8c1;
-      }
-
-      h3 {
-        text-align: center;
-        font-weight: bold;
-        font-family: Roboto;
-        font-size: 30px;
-        line-height: 43.5px;
-        color: #ffffff;
-      }
-
-      @media (max-width: 600px) {
-        h2 {
-          text-align: center;
-          font-family: Roboto;
-          font-size: 25px;
-          color: #b0b8c1;
-        }
-
-        h3 {
-          width: max-content;
-          text-align: center;
-          font-weight: bold;
-          font-family: Roboto;
-          font-size: 15px;
-          line-height: 20px;
-          color: #ffffff;
-        }
-      }
-
-      .box {
-        position: absolute;
-        top: 150%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .text {
-        padding-top: 150px;
-        text-align: center;
-        font-weight: bold;
-        font-family: Roboto;
-        font-size: 42px;
-        line-height: auto;
-        color: #ffffff;
-      }
-
-      @media (max-width: 600px) {
-        .text {
-          padding-top: 120px;
-          text-align: center;
-          font-weight: bold;
-          font-family: Roboto;
-          font-size: 20px;
-          line-height: auto;
-          color: #ffffff;
-        }
-      }
-    </style>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div class="wrapper">
         <div class="logo"></div>
         <nav>
@@ -219,7 +30,23 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="./index.html">SANDBURG</a>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="./index.html">샌드버그</a></li>
+        <li><a href="">서비스</a></li>
+        <li><a href="./team.html">팀원</a></li>
+        <li><a href="">문의</a></li>
+      </ul>
+
+      <a href="#" class="navbar__toogleBtn">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+
     <div class="main1_wrapper">
       <h1>세상은 저절로<br />나아지지 않습니다.</h1>
     </div>
