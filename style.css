@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 196px;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 9999;
+}
+.navbar__logo {
+  font-size: 20px;
+}
+.navbar__logo a {
+  color: white;
+  font-weight: bold;
+}
+.navbar__menu {
+  display: flex;
+  list-style: none;
+}
+.navbar__menu li {
+  padding: 8px 12px;
+}
+.navbar__menu li:hover {
+  background-color: #5f6061;
+  border-radius: 4px;
+}
+.navbar__menu a {
+  color: white;
+}
+.navbar__toogleBtn {
+  display: none;
+  position: absolute;
+  right: 28px;
+  font-size: 24px;
+  color: #b0b8c1;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: auto;
+}
+.main1_wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background_main1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main1_wrapper h1 {
+  padding: 196px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 100px;
+  color: #ffffff;
+}
+.main2_wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background_main2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main2_wrapper h2 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 100px;
+  color: #b0b8c1;
+}
+.main2_wrapper h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 43.5px;
+  color: #ffffff;
+}
+.main3_wrapper {
+  height: 100vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text {
+  padding-top: 150px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 42px;
+  line-height: auto;
+  color: #ffffff;
+}
+
+/* team css */
+.team1_wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background_team1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team2_wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background_team2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team3_wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background_team3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainBox {
+  width: max-content;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.nick1 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #d2d2d2;
+  margin: 18px;
+  margin-top: 28px;
+}
+.nick2 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 18px;
+}
+.nick3 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 36px;
+  color: #ffffff;
+  margin: 18px;
+}
+.p1 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 18px;
+  margin-top: 40px;
+  margin-right: 100px;
+}
+.p2 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 36px;
+  color: #ffffff;
+  margin: 18px;
+  margin-left: 100px;
+}
+.p3 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 18px;
+  margin-top: 40px;
+  margin-right: 300px;
+}
+.p4 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 18px;
+  margin-top: 40px;
+  margin-right: 700px;
+}
+
+.image1 {
+  margin-right: 250px;
+}
+.image2 {
+  margin-left: 200px;
+}
+.image3 {
+  margin-right: 20px;
+}
+.image1 img {
+  width: 160px;
+}
+.image2 img {
+  width: 160px;
+}
+.image3 img {
+  width: 160px;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar__logo {
+    padding: 0px 0px 8px 0px;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar__menu li {
+    text-align: center;
+  }
+  .navbar__toogleBtn {
+    display: block;
+  }
+  .navbar__menu.active {
+    display: block;
+  }
+
+  .main1_wrapper h1 {
+    padding: 45px;
+    padding-top: 180px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 50px;
+    color: #ffffff;
+  }
+  .main2_wrapper h2 {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 25px;
+    color: #b0b8c1;
+  }
+  .main2_wrapper h3 {
+    width: max-content;
+    text-align: center;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+  .text {
+    padding-top: 120px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: auto;
+    color: #ffffff;
+  }
+
+  .mainBox {
+    flex-direction: column;
+  }
+
+  .image1 {
+    margin-right: 0px;
+  }
+  .image2 {
+    margin-left: 0px;
+  }
+  .image3 {
+    margin-right: 0px;
+  }
+
+  .nick1 {
+    font-size: 18px;
+    margin: 18px;
+    margin-top: 28px;
+  }
+  .nick2 {
+    font-size: 18px;
+    margin: 18px;
+  }
+  .nick3 {
+    font-size: 20px;
+    margin: 18px;
+  }
+  .image1 img {
+    width: 120px;
+  }
+  .image2 img {
+    width: 120px;
+  }
+  .image3 img {
+    width: 130px;
+  }
+  .p1 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 70px;
+  }
+  .p2 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 15px;
+  }
+  .p3 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 70px;
+  }
+  .p4 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 70px;
+  }
+
+  .team2_wrapper .mainBox {
+    flex-direction: column-reverse;
+  }
+}
