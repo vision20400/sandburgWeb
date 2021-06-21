@@ -59,6 +59,8 @@ a {
     url(background_main1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 .main1_wrapper h1 {
   padding: 196px;
@@ -248,7 +250,6 @@ a {
 
   .main1_wrapper h1 {
     padding: 45px;
-    padding-top: 180px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
