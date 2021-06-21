@@ -134,7 +134,7 @@ a {
 .team3_wrapper {
   height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(background_team3.png);
+    url(background_team3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
