@@ -1,0 +1,170 @@
+/* team css */
+.team1_wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background_team1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team2_wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background_team2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team3_wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(background_team3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainBox {
+  width: max-content;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.nick1 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #d2d2d2;
+  margin: 18px;
+  margin-top: 28px;
+}
+.nick2 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 18px;
+}
+.nick3 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 36px;
+  color: #ffffff;
+  margin: 18px;
+}
+.p1 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 18px;
+  margin-top: 40px;
+  margin-right: 100px;
+}
+.p2 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 36px;
+  color: #ffffff;
+  margin: 18px;
+  margin-left: 100px;
+}
+.p3 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 18px;
+  margin-top: 40px;
+  margin-right: 300px;
+}
+.p4 {
+  font-weight: Bold;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 18px;
+  margin-top: 40px;
+  margin-right: 700px;
+}
+
+.image1 {
+  margin-right: 250px;
+}
+.image2 {
+  margin-left: 200px;
+}
+.image3 {
+  margin-right: 20px;
+}
+.image1 img {
+  width: 160px;
+}
+.image2 img {
+  width: 160px;
+}
+.image3 img {
+  width: 160px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainBox {
+    flex-direction: column;
+  }
+
+  .image1 {
+    margin-right: 0px;
+  }
+  .image2 {
+    margin-left: 0px;
+  }
+  .image3 {
+    margin-right: 0px;
+  }
+
+  .nick1 {
+    font-size: 18px;
+    margin: 18px;
+    margin-top: 28px;
+  }
+  .nick2 {
+    font-size: 18px;
+    margin: 18px;
+  }
+  .nick3 {
+    font-size: 20px;
+    margin: 18px;
+  }
+  .image1 img {
+    width: 120px;
+  }
+  .image2 img {
+    width: 120px;
+  }
+  .image3 img {
+    width: 130px;
+  }
+  .p1 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 70px;
+  }
+  .p2 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 15px;
+  }
+  .p3 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 70px;
+  }
+  .p4 {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 70px;
+  }
+
+  .team2_wrapper .mainBox {
+    flex-direction: column-reverse;
+  }
+}

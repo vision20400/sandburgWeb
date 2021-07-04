@@ -1,0 +1,164 @@
+.main_wrapper {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+  padding: 80px 0px 30px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 42px;
+  line-height: auto;
+  color: #ffffff;
+}
+
+/* tree css*/
+.tree {
+  padding-bottom: 50px;
+}
+.tree ul {
+  margin: 30px auto;
+  position: relative;
+  width: 960px;
+}
+.tree ul:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  padding: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #eee;
+}
+.tree ul li {
+  position: relative;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.tree ul li:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 85.3333%;
+  width: 75px;
+  height: 38px;
+  background-image: url(tree.png);
+  background-size: 78px 38px;
+}
+.tree ul li:nth-child(odd) {
+  padding-left: 59.5%;
+}
+.tree ul li:nth-child(odd):before {
+  transform: rotate(180deg);
+  left: 45.3333%;
+  right: auto;
+}
+.tree ul li h4 {
+  padding-top: 6px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.tree ul li p {
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.01rem;
+  color: #dbdbdb;
+  word-break: keep-all;
+}
+
+.tree ul li span {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  width: 320px;
+  height: 180px;
+  background: #dfdfdf;
+}
+.tree ul li span:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -35px;
+  font-size: 14px;
+}
+.tree ul li span img {
+  width: 320px;
+  height: 180px;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    padding-top: 120px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: auto;
+    color: #ffffff;
+  }
+  /* tree */
+  .tree ul li {
+    position: relative;
+    margin-bottom: 20px;
+    width: 50%;
+    padding-left: 40%;
+  }
+  .tree ul li:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -4px;
+    width: 75px;
+    height: 38px;
+    background-image: url(tree.png);
+    background-size: 78px 38px;
+    transform: rotate(180deg);
+    left: 20%;
+    right: auto;
+  }
+  .tree ul li:nth-child(odd) {
+    padding-left: 40%;
+  }
+  .tree ul li:nth-child(odd):before {
+    transform: rotate(180deg);
+    left: 20%;
+    right: auto;
+  }
+  .tree ul:before {
+    left: 19.3%;
+  }
+
+  .main3_wrapper {
+    height: 180vh;
+  }
+
+  .tree ul li span {
+    width: 180px;
+    height: 110px;
+  }
+  .tree ul li span img {
+    width: 180px;
+    height: 110px;
+  }
+  .tree ul li h4 {
+    padding-top: 6px;
+    margin-bottom: 30px;
+    font-size: 8px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .tree ul li p {
+    display: none;
+  }
+  .tree ul {
+    width: auto;
+  }
+}
