@@ -1,0 +1,96 @@
+.main1_wrapper {
+  height: 100vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main2_wrapper {
+  height: 100vh;
+  background-color: rgb(94, 94, 94);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main3_wrapper {
+  height: 100vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: ivory;
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h2 {
+  color: ivory;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.horizontal_box {
+  display: flex;
+  align-items: center;
+}
+
+.supportus_app {
+  padding-right: 70px;
+}
+
+.vertical_box {
+  margin-bottom: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .supportus_app img {
+    height: 300px;
+  }
+  .fundo_app img {
+    height: 300px;
+  }
+  .vshop_app img {
+    height: 300px;
+  }
+  .horizontal_box {
+    flex-direction: column;
+  }
+  .main2_wrapper .horizontal_box {
+    flex-direction: column-reverse;
+  }
+
+  .supportus_app {
+    padding-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .fundo_app {
+    padding-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .vshop_app {
+    padding-right: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
